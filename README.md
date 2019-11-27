@@ -11,12 +11,11 @@ see the bellow repos for next steps:
 * [Part 3 setting up CD ](https://github.com/bbdsoftware/eks-argo-cd)
 
 ---
-**NOTES**
-
-Please see  https://github.com/bbdsoftware/eks-pring-boot-jenkinsop-example for the example application used in this helm chart.
+## NOTES
+Please see  https://github.com/bbdsoftware/eks-pring-boot-jenkinsop-example for the example application used in this helm chart.  
 Please ensure you have competed  https://github.com/bbdsoftware/eks-bootstrap#cd-gitops
----
-**Steps:**
+
+##Steps:
 
 * Via manifest 
 
@@ -31,7 +30,7 @@ Please ensure you have competed  https://github.com/bbdsoftware/eks-bootstrap#cd
 
     Alternatively you may also use the argo ui to configure this application.
     
-Verify
+## Verify
 
 Once this has been applied you can see the application in the argo server ui * 
 ![INgress](./img/argo.png)
