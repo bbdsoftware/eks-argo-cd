@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  creationTimestamp: "2019-11-24T21:27:25Z"
+  name: spring-boot-k8s-jenkinsop-example
+  namespace: argo-cd
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  syncPolicy:
+    automated: {}
+  source:
+    helm:
+      valueFiles:
+        - values.yaml
+    path: helm-eks-spring-boot-demo
+    repoURL: https://github.com/bbdsoftware/eks-argo-cd.git
+    targetRevision: master
+  sourceType: Helm
